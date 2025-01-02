@@ -176,6 +176,45 @@ export type Database = {
         }
         Relationships: []
       }
+      song_analysis: {
+        Row: {
+          analysis_text: string | null
+          artist: string | null
+          created_at: string | null
+          id: string
+          key_themes: string[] | null
+          lyrics: string | null
+          sentiment_score: number | null
+          song_title: string
+          updated_at: string | null
+          user_id: string | null
+        }
+        Insert: {
+          analysis_text?: string | null
+          artist?: string | null
+          created_at?: string | null
+          id?: string
+          key_themes?: string[] | null
+          lyrics?: string | null
+          sentiment_score?: number | null
+          song_title: string
+          updated_at?: string | null
+          user_id?: string | null
+        }
+        Update: {
+          analysis_text?: string | null
+          artist?: string | null
+          created_at?: string | null
+          id?: string
+          key_themes?: string[] | null
+          lyrics?: string | null
+          sentiment_score?: number | null
+          song_title?: string
+          updated_at?: string | null
+          user_id?: string | null
+        }
+        Relationships: []
+      }
       students: {
         Row: {
           contact_info: Json | null
