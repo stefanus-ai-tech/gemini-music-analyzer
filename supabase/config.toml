@@ -1,1 +1,4 @@
 project_id = "sqhinevcqrybkipcnieu"
+
+[functions.analyze-song]
+verify_jwt = true
